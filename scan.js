@@ -32,3 +32,9 @@ const observer = new IntersectionObserver(
 
 // Observe all sections (now including certifications)
 sections.forEach(section => observer.observe(section));
+const toggle = document.getElementById("menu-toggle");
+const menu = document.querySelector(".nav-menu");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("show");
+});
